@@ -27,7 +27,7 @@ client.rm.reportSuccessEnable=false
 client.rm.sagaBranchRegisterEnable=false
 client.tm.commitRetryCount=5
 client.tm.rollbackRetryCount=5
-store.mode=file
+store.mode=db
 store.file.dir=file_store/data
 store.file.maxBranchSessionSize=16384
 store.file.maxGlobalSessionSize=512
@@ -37,9 +37,9 @@ store.file.sessionReloadReadSize=100
 store.db.datasource=druid
 store.db.dbType=mysql
 store.db.driverClassName=com.mysql.jdbc.Driver
-store.db.url=jdbc:mysql://127.0.0.1:3306/seata?useUnicode=true
-store.db.user=username
-store.db.password=password
+store.db.url=jdbc:mysql://192.168.204.130:3306/seata?useUnicode=true
+store.db.user=root
+store.db.password=root
 store.db.minConn=5
 store.db.maxConn=30
 store.db.globalTable=global_table
